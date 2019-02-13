@@ -1,0 +1,109 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mentor</title>
+        <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+        <link href="{% static 'css/Home.css' %}" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="navbar-top">
+                <div class="container-fluid" id=atas>
+                    <div class="row" id="row1">
+                        <div class="col-md-6 col-12">
+                            <span id="ata">Alpha Tech Academy</span>
+                        </div>
+                        <div class="col-md-6 col-12 link" id=menu>          
+                            <a href="{% url 'Home' %}" id="Home">Home</a>
+                            <a href="{% url 'Blog' %}" id="Blog">Blog</a>
+                            <a href="{% url 'Mentor' %}" id="Mentor">Mentor</a>
+                            <a href="{% url 'Mentee' %}" id="Mentee">Mentee</a>
+                            <a href="{% url 'Author' %}" id="Author">Author</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </body>
+    
+    <div class="row justify-content-center" id="row2">
+        <div class="col-6">
+            <div class="section-header">
+                <img class="foto" src="{% static 'images/alpha-logo.png' %}"><br>
+                <br>
+                <h1 id="ata1">Alpha Tech Academy</h1>
+                <span id="ata2">
+                    Alpha Tech Academy is a teach talent incubator that gives everyone (even
+                    non background IT) a chance to be a professional Tech Talent within 3
+                    months. Contact Person: Email: academy@alphatech.id Mobile phone:
+                    0877 9609 9530
+                </span><br><br>
+            </div>
+        </div>
+    </div>
+    
+<div class="tengah-tengah1">
+    <div class="row" id="id-mentor">
+        <div id="learn">
+            <h5>Our Mentor</h5>
+        </div>
+    </div>
+    <div class="mentor row" id="id-mentor">
+        <div class="col-md-4 col-12">
+            <img class="foto-mentor" src="{% static 'images/people-andreas.png' %}">
+        </div>
+        <div class="col-md-8 col-12">
+            <h5 class="nama-mentor">Andreas Nugroho</h5>
+            <h6 class="desc"> Software Ninja (5 years experience)</h6>
+            <p>"Great place to learn about programming. Come join us!"</p>
+        </div>
+    </div>
+    <div class="mentor row" id="id-mentor">
+        <div class="col-md-4 col-12">
+            <img class="foto-mentor" src="{% static 'images/people-ramdhan.png' %}">
+        </div> 
+        <div class="col-md-8 col-12">
+            <h5 class="nama-mentor">Ramdhan Hidayat</h5>
+            <h6 class="desc">Master of Chaos (10 years experience)</h6>
+            <p>"We make this program with passion, hard work and heart. Let's get rock with us."</p>
+        </div>
+    </div>
+    <div class="mentor row" id="id-mentor">
+        <div class="col-md-4 col-12">
+            <img class="foto-mentor" src="{% static 'images/people-trimo.png' %}">
+        </div>
+        <div class="col-md-8 col-12">
+            <h5 class="nama-mentor">Trimo Leksono</h5>
+            <h6 class="desc">Magician (8 years experience)</h6>
+            <p>"The best place for who want to be a great IT talent."</p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+</div>
+
+    <footer>
+        <div class="wadah-gambar">
+            <div class="gambar row">
+                <div class="col-md-2">
+                    <p>Our product:</p>
+                </div>
+                <div class="col-md-2">
+                    <img src="{% static 'images/logo-grey-alphapay.png' %}">
+                </div>
+                <div class="col-md-2">
+                    <img src="{% static 'images/logo-grey-sepulsa.png' %}">
+                </div>
+                <div class="col-md-2">
+                    <img src="{% static 'images/logo-grey-alphabill.png' %}">
+                </div>
+            </div>
+        </div>
+        <div class="bawah">
+            <p>Contact Person: Mobile phone: 0877 9609 9530. Email: <span id="ata3">academy@alphatech.id</span>
+            </p>
+        </div>
+    </footer>
+</html>
